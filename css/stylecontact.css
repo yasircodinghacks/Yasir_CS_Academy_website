@@ -160,16 +160,17 @@ form input,textarea{
     background-color: rgba(255, 255, 255, 0.082);
   }
   .videosec{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 80px 0 20px 0;
   }
-  video{
-    width: 65%;
+  iframe{
+    width: 80%;
+    height: 65vh;
     border-radius: 30px;
     border: 10px solid rgba(0, 0, 0, 0.356);
-    outline: none;
     opacity: 0.6;
   }
 @media screen and (max-width:600px){
@@ -187,6 +188,9 @@ form input,textarea{
       font-weight: 300;
       font-size: 20px;
     }
+    iframe{
+      height: 15vh;
+    }
 }
 @media screen and (max-width:800px){
     .inputform{
@@ -194,5 +198,8 @@ form input,textarea{
     }
     video{
       width: 80%;
+    }
+    iframe{
+      height: 49vh;
     }
 }
